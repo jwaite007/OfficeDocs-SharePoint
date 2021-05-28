@@ -107,7 +107,10 @@ We recommend that you don't make any changes to the default permission levels th
 You can delete any permission level, except for **Full Control** and **Limited Access**. We don't recommend that you delete a default permission level.
   
 To delete a permission level, on the **Permissions Levels** page, select the check box next to the permission level that you want to delete, and then chose **Delete Selected Permission Levels**.
-  
+
+> [!CAUTION]
+> It is possible to create a permission level that will create unexpected results or Access Denied messages if you remove required permissions.  The Modern SharePoint user experience leverages client side rendering which requires that all users have "Use Remote Interfaces" enabled. Removing "Use Remote Interfaces" permissions from a permission level can result in Access Denied errors that will prevent either certain elements on a modern page or the entire page from loading.     
+
 ## Best practices for permission levels
 <a name="__best_practices_for"> </a>
 
